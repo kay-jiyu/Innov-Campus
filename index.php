@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>Innov_Campus</title>
+</head>
+
+<body>
+    <header>
+        <?php include("./components/header.inc.php"); ?>
+    </header>
+
+    <main>
+        <?php include("contener.inc.php"); ?>
+    </main>
+
+    <footer>
+        <?php include("./components/footer.inc.php"); ?>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
