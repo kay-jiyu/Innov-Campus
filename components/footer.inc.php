@@ -1,40 +1,36 @@
 <footer class="footer">
     <div class="container_footer">
         <div>
-            <h2>Entreprise et Partenaires</h2>
-            <img src="" alt="logo">
-            <p>description</p>
-            <img src="" alt="Partners">
+            <img src="images/innov_campus_logo.png" class="logo_footer" alt="logo"><br>
+            <p class="description_footer">Innov'Campus est une plateforme de valorisation <br>des startups étudiantes, portée par ESGIS.
+            Un espace <br> dédié à l'innovation et à l'entrepreneuriat au sein du campus.</p><br>
+            <img src="https://www.esgis.bj/logo-red.png" class="logo_esgis" alt="Partners"><br>
         </div>
         <div>
-            <h2>Navigation</h2>
+            <h3>Navigation</h3> <br>
             <p>
-                <a href="index.php" class="<?php if (!isset($_GET['pg'])) echo 'active_footer' ?>">
+                <a href="index.php" class="menu_footer <?php if (!isset($_GET['pg'])) echo 'active_footer' ?>">
                     ACCUEIL
                 </a>
-            </p>
+            </p><br>
             <p>
-                <a href="index.php?pg=ab" class="<?php if ((isset($_GET['pg']) && $_GET['pg'] == 'ab')) echo 'active_footer'; ?>">
+                <a href="index.php?pg=ab" class="menu_footer  <?php if ((isset($_GET['pg']) && $_GET['pg'] == 'ab')) echo 'active_footer'; ?>">
                     QUI SOMMES-NOUS ?
                 </a>
-            </p>
+            </p><br>
 
 
             <p>
-                <a href="index.php?pg=pro" class="<?php if ((isset($_GET['pg']) && $_GET['pg'] == 'pro')) echo 'active_footer'; ?>">
+                <a href="index.php?pg=pro" class="menu_footer <?php if ((isset($_GET['pg']) && $_GET['pg'] == 'pro')) echo 'active_footer'; ?>">
                     DECOUVRIR LES PROJETS
                 </a>
             </p>
 
-            <p>
-                <a href="index.php?pg=reg" class="<?php if ((isset($_GET['pg']) && $_GET['pg'] == 'reg')) echo 'active_footer'; ?>">
-                    AJOUTEZ UN PROJET</a>
-            </p>
+
         </div>
         <div>
-            <h2>Contact</h2>
-            <p>Téléphone :</p>
-            <p>Email : </p>
+            <h3>Contact</h3><br>
+            <p>Email : contact@innovcampus.com </p><br><br><br><br>
         </div>
     </div>
     <div class=" footer_bottom">
