@@ -39,13 +39,6 @@
   <img src="https://img.shields.io/badge/ESGIS-BÉNIN-important?style=for-the-badge" alt="ESGIS Bénin"/>
 </p>
 
-<!-- Stats GitHub réelles -->
-<p>
-  <img src="https://img.shields.io/github/stars/Nin-Shinobi/Innov-Campus?style=flat-square&label=⭐%20Stars"/>
-  <img src="https://img.shields.io/github/forks/Nin-Shinobi/Innov-Campus?style=flat-square&label=🍴%20Forks"/>
-  <img src="https://img.shields.io/github/last-commit/Nin-Shinobi/Innov-Campus?style=flat-square&label=📅%20Dernier%20commit"/>
-</p>
-
 <!-- Stats projet -->
 <p>
   <img src="https://img.shields.io/badge/🏆%2015%2B-Startups%20lancées-success?style=flat-square"/>
