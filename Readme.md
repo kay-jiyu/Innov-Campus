@@ -1,12 +1,12 @@
 <div align="center">
 
 <!-- Bannière animée via SVG -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=color=bc1823&height=200&section=header&text=Innov'Campus&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=La%20plateforme%20d'incubation%20des%20étudiants%20ESGIS&descAlignY=58&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=bc1823&height=200&section=header&text=Innov'Campus&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=La%20plateforme%20d'incubation%20des%20étudiants%20ESGIS&descAlignY=58&descSize=16" width="100%"/>
 
 <!-- Logo -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Nin-Shinobi/Innov-Campus/main/images/ic_logo_fb.png">
-  <img src="https://raw.githubusercontent.com/Nin-Shinobi/Innov-Campus/main/images/ic_logo_fb.png" alt="Innov'Campus Logo" width="160"/>
+  <img src="https://raw.githubusercontent.com/Nin-Shinobi/Innov-Campus/main/images/ic_logo_fb.png" alt="Innov'Campus Logo" width="500"/>
 </picture>
 
 <h1>🚀 Innov'Campus</h1>
