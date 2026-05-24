@@ -17,23 +17,24 @@ if (isset($_POST['id'])) {
 
         $req = sprintf(
             "UPDATE startup SET nom_projet='%s', secteur='%s', description='%s', date_creation='%s', email_contact='%s', logo='%s' WHERE id='%d'",
-            $_POST['nom_projet'],
-            $_POST['secteur'],
-            $_POST['description'],
-            $_POST['date_creation'],
-            $_POST['email_contact'],
+            mysqli_real_escape_string($con, $_POST['nom_projet']),
+            mysqli_real_escape_string($con, $_POST['secteur']),
+            mysqli_real_escape_string($con, $_POST['description']),
+            mysqli_real_escape_string($con, $_POST['date_creation']),
+            mysqli_real_escape_string($con, $_POST['email_contact']),
             $logoPath,
-            $_POST['id']
+            mysqli_real_escape_string($con, $_POST['id'])
+
         );
     } else {
         $req = sprintf(
             "UPDATE startup SET nom_projet='%s', secteur='%s', description='%s', date_creation='%s', email_contact='%s' WHERE id='%d'",
-            $_POST['nom_projet'],
-            $_POST['secteur'],
-            $_POST['description'],
-            $_POST['date_creation'],
-            $_POST['email_contact'],
-            $_POST['id']
+            mysqli_real_escape_string($con, $_POST['nom_projet']),
+            mysqli_real_escape_string($con, $_POST['secteur']),
+            mysqli_real_escape_string($con, $_POST['description']),
+            mysqli_real_escape_string($con, $_POST['date_creation']),
+            mysqli_real_escape_string($con, $_POST['email_contact']),
+            mysqli_real_escape_string($con, $_POST['id'])
         );
     }
     mysqli_query($con, $req);
@@ -55,11 +56,11 @@ if (isset($_POST['id'])) {
 
     $req = sprintf(
         "INSERT INTO startup (nom_projet, secteur, description, date_creation, email_contact, logo) VALUES ('%s','%s','%s','%s','%s','%s')",
-        $_POST['nom_projet'],
-        $_POST['secteur'],
-        $_POST['description'],
-        $_POST['date_creation'],
-        $_POST['email_contact'],
+        mysqli_real_escape_string($con, $_POST['nom_projet']),
+        mysqli_real_escape_string($con, $_POST['secteur']),
+        mysqli_real_escape_string($con, $_POST['description']),
+        mysqli_real_escape_string($con, $_POST['date_creation']),
+        mysqli_real_escape_string($con, $_POST['email_contact']),
         $logoPath
     );
 

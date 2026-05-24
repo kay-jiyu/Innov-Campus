@@ -56,32 +56,39 @@ if (isset($_POST['secteur_filter'])) {
                 $logo    = $startup_info['logo'];
 
                 echo "
-        <div class='startup-card'>
-          <div class='card-logo'>
-            <img src='$logo' alt='Logo $nom' onerror=\"this.style.display='none'\">
-          </div>
-          <div class='card-info'>
-            <p class='card-nom'>$nom</p>
-            <span class='card-secteur'>$secteur</span>
-          </div>
-          <div class='card-body'>
-            <div class='desc_section'>
-              <p class='desc-text' id='desc_$id'>$desc</p>
-              <button class='lire-suite' onclick=\"toggleDesc('desc_$id', this)\">Lire la suite</button>
-            </div>
-            <div class='card-meta'>
-              <div class='meta-row'>Date de création : $date</div>
-              <div class='meta-row'>Mail : $mail</div>
-            </div>
-          </div>
-          <div class='card-actions'>
-            <a href='index.php?pg=del&id=$id' class='action-btn btn-delete'>Supprimer</a>
-            <a href='index.php?pg=reg&id=$id' class='action-btn btn-edit'>Modifier</a>
-            <a href='index.php?pg=down&id=$id' class='action-btn btn-down'>Télécharger</a>
-          </div>
-        </div>";
+<div class='startup-card'>
+  <div class='card-logo'>
+    <img src='$logo' alt='Logo $nom' onerror=\"this.style.display='none'\">
+  </div>
+  <div class='card-info'>
+    <p class='card-nom'>$nom</p>
+    <span class='card-secteur'>$secteur</span>
+  </div>
+  <div class='card-body'>
+    <p class='desc-text'>$desc</p>
+    <div class='card-meta'>
+      <div class='meta-row'>Date de création : $date</div>
+      <div class='meta-row'>Mail : $mail</div>
+    </div>
+  </div>
+  <div class='card-actions'>
+    <a class='action-btn btn-delete' onclick=\"openDeletePopup($id)\">Supprimer</a>
+    <a href='index.php?pg=reg&id=$id' class='action-btn btn-edit'>Modifier</a>
+    <a href='index.php?pg=down&id=$id' class='action-btn btn-down'>Télécharger</a>
+  </div>
+</div>";
             }
         }
         ?>
     </div>
 </section><br><br>
+
+<div class="overlay" id="deleteOverlay">
+    <div class="pop_up">
+        <p>Voulez-vous vraiment supprimer cette startup ?</p>
+        <div class="button_confirm">
+            <button class="button_confirm_style del" id="confirmDelete">Oui</button>
+            <button class="button_confirm_style non" id="cancelDelete">Non</button>
+        </div>
+    </div>
+</div>

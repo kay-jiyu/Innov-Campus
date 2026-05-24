@@ -1,0 +1,297 @@
+.startup-form {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--secondary);
+  margin: -1px 0 0 -1px;
+  position: relative;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #888;
+  padding: 10px 14px 0;
+  pointer-events: none;
+  transition: color 0.2s;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: none;
+  outline: none;
+  padding: 5px 14px 12px;
+  font-family: var(--font);
+  font-size: 14px;
+  background: transparent;
+  color: var(--secondary);
+  width: 100%;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.field.select-wrap {
+  position: relative;
+}
+
+.field.select-wrap::after {
+  content: "▾";
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  font-size: 12px;
+  color: #888;
+  pointer-events: none;
+}
+
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.field:focus-within {
+  border-color: var(--accent);
+  z-index: 1;
+}
+
+.field:focus-within label {
+  color: var(--accent);
+}
+
+.preview-wrap {
+  grid-column: 1 / -1;
+  border: 2px solid var(--secondary);
+  margin: -1px 0 0 -1px;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  transition: background 0.2s;
+}
+
+.preview-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.preview-placeholder {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+
+.upload-zone {
+  grid-column: 1 / -1;
+  border: 2px dashed var(--secondary);
+  margin: -1px 0 0 -1px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.upload-zone:hover,
+.upload-zone.drag-over {
+  border-color: var(--accent);
+  background: #fff8f8;
+}
+
+.upload-zone.drag-over {
+  border-style: solid;
+}
+
+.upload-zone input[type="file"] {
+  display: none;
+}
+
+.upload-icon {
+  font-size: 22px;
+  color: #bbb;
+  line-height: 1;
+}
+
+.upload-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.upload-sub {
+  font-size: 11px;
+  color: #bbb;
+}
+
+.form-actions {
+  display: flex;
+  max-width: 100%;
+}
+
+.btn-submit {
+  flex: 1;
+  border: 2px solid var(--secondary);
+  border-top: none;
+  padding: 16px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.btn-submit:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .startup-form {
+    max-width: 720px;
+
+    padding: 0 1rem 3rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .preview-wrap {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .startup-form {
+    padding: 0 0.7rem 2rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: auto;
+  }
+
+  .field {
+    margin: -1px 0 0;
+  }
+
+  .field label {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    padding: 10px 12px 0;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 13px;
+
+    padding: 8px 12px 12px;
+  }
+
+  .field textarea {
+    min-height: 100px;
+  }
+
+  .preview-wrap {
+    height: 160px;
+  }
+
+  .preview-placeholder {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .upload-zone {
+    padding: 1rem;
+  }
+
+  .upload-icon {
+    font-size: 18px;
+  }
+
+  .upload-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .upload-sub {
+    font-size: 10px;
+
+    text-align: center;
+  }
+
+  .btn-submit {
+    padding: 14px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 380px) {
+  .startup-form {
+    padding: 0 0.4rem 2rem;
+  }
+
+  .preview-wrap {
+    height: 130px;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 12px;
+  }
+
+  .btn-submit {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+  }
+}

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container_footer">
         <div>
-            <img src="images/innov_campus_logo.png" class="logo_footer" alt="logo"><br>
+            <img src="images/ic_logo_fb.png" class="logo_footer" alt="logo"><br>
             <p class="description_footer">Innov'Campus est une plateforme de valorisation <br>des startups étudiantes, portée par ESGIS.
             Un espace <br> dédié à l'innovation et à l'entrepreneuriat au sein du campus.</p><br>
             <img src="https://www.esgis.bj/logo-red.png" class="logo_esgis" alt="Partners"><br>

@@ -19,7 +19,9 @@ if (isset($_GET['id'])) {
 
 <section>
     <h1 class="title"><?php echo isset($enreg) ? 'Modifier la startup' : 'Ajoutez votre startup'; ?></h1><br>
-    <p class="description_project">Renseignez les informations de votre projet</p><br>
+    <p class="description_project">Renseignez les informations de votre projet</p>
+    <div class="team-intro-line"></div><br>
+
 
     <form class="startup-form" method="POST" action="index.php?pg=ins" enctype="multipart/form-data">
         <div class="form-grid">
@@ -104,7 +106,8 @@ if (isset($_GET['id'])) {
 
         <div class="form-actions">
             <button type="submit" class="btn-submit">
-                <?php if (isset($enreg)) echo "Modifier"; else echo "S'enregistrer"; ?>
+                <?php if (isset($enreg)) echo "Modifier";
+                else echo "S'enregistrer"; ?>
             </button>
         </div>
     </form>
