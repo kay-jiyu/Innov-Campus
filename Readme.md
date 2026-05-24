@@ -9,8 +9,6 @@
   <img src="https://raw.githubusercontent.com/Nin-Shinobi/Innov-Campus/main/images/ic_logo_fb.png" alt="Innov'Campus Logo" width="500"/>
 </picture>
 
-<h1>🚀 Innov'Campus</h1>
-
 <p>
   <strong>La plateforme d'incubation qui transforme les idées des étudiants ESGIS en startups concrètes</strong>
   <br/>
